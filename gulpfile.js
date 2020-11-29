@@ -8,7 +8,7 @@ let gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('clean', async function(){
-    del.sync('dist')
+    del.sync(['./*/', '!./app', '!./node_modules', '!./.gitignore', '!./gulpfile.js', '!./package-lock.json', '!./package.json'])
 });
 
 
